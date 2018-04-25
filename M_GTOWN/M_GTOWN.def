@@ -1,0 +1,6 @@
+; M_GTOWN.def : 声明 DLL 的模块参数。
+
+LIBRARY      "M_GTOWN"
+
+EXPORTS
+    ; 此处可以是显式导出

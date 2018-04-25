@@ -1,0 +1,364 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\M_GM.rc2""  // 不是由 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,9
+ PRODUCTVERSION 1,0,1,9
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "FileDescription", "M_GM模块"
+            VALUE "FileVersion", "1.0.1.9"
+            VALUE "InternalName", "M_GM.dll"
+            VALUE "LegalCopyright", "保留所有权利。"
+            VALUE "OriginalFilename", "M_GM.dll"
+            VALUE "ProductName", "GMClient"
+            VALUE "ProductVersion", "1.0.1.9"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLGMODIPWD DIALOGEX 0, 0, 429, 209
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "修改密码",IDMODIPWD,129,120,50,14
+    PUSHBUTTON      "重置",IDMPRESET,257,118,50,14
+    LTEXT           "新密码：",IDC_STATNEWPWD,145,44,33,8
+    LTEXT           "重复新密码：",IDC_STATPWDAG,130,79,49,8
+    EDITTEXT        IDC_EDITNEWPWD,182,41,125,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITPWDAG,183,75,124,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_DLGUSERMANAGE DIALOGEX 0, 0, 527, 308
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "添加用户",IDADDUSER,168,263,50,14
+    PUSHBUTTON      "重置",IDRESET,297,261,50,14
+    CONTROL         "",IDC_TABUSERMANAGE,"SysTabControl32",0x0,7,7,513,13
+    GROUPBOX        "",IDC_STATPAGE,7,16,513,28
+    LTEXT           "请选择查看页数：",IDC_LBLPAGE,37,27,65,8
+    COMBOBOX        IDC_CMBPAGE,105,25,72,101,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LISTUSER,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,21,70,60,50
+    LTEXT           "用户名：",IDC_STATNAME,172,58,33,8
+    LTEXT           "密码：",IDC_STATUPWD,179,82,25,8
+    LTEXT           "确认密码：",IDC_STATPWDAG,163,107,41,8
+    LTEXT           "真实姓名：",IDC_STATREALNAME,165,133,41,8
+    LTEXT           "所在部门：",IDC_STATDEPART,165,158,41,8
+    LTEXT           "使用时效：",IDC_STATENDTIME,165,184,41,8
+    EDITTEXT        IDC_TXTUSER,206,55,138,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TXTPWD,206,79,138,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_TXTPWDAG,206,104,137,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_TXTREALNAME,208,130,137,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CMBDEPART,207,155,138,59,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_DTPENDTIME,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,207,181,138,15
+    CONTROL         "停用该帐号",IDC_CHECKEXIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,167,213,56,10
+    CONTROL         "用户在线",IDC_CHECKUSERONLINE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,295,212,48,10
+    CONTROL         "系统管理员",IDC_CHECKSYSMANAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,168,239,56,10
+    CONTROL         "部门管理员",IDC_CHECKDEPART,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,295,237,56,10
+END
+
+IDD_DLGPOPEDOM DIALOGEX 0, 0, 186, 233
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "权限管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,59,212,50,14
+    PUSHBUTTON      "取消",IDCANCEL,129,212,50,14
+    CONTROL         "",IDC_LISTGAME,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,172,91
+    CONTROL         "",IDC_LISTMODULE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,113,172,95
+    LTEXT           "游戏权限",IDC_LBLGAMEPOPEDOM,7,102,33,8
+END
+
+IDD_DLGGMLOG DIALOGEX 0, 0, 580, 298
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "查询",IDSEARCH,513,14,50,14
+    PUSHBUTTON      "关闭",IDCANCEL,513,34,50,14
+    GROUPBOX        "搜索条件",IDC_GRPSEARCH,7,7,566,52
+    LTEXT           "游戏服务器：",IDC_LBLSERVER,31,36,49,8
+    COMBOBOX        IDC_CMBSERVER,81,33,122,131,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "GM真实姓名：",IDC_LBLREALNAME,351,18,51,8
+    LTEXT           "请选择查看页数：",IDC_LBLPAGE,27,65,65,8
+    COMBOBOX        IDC_CMBPAGE,94,62,48,194,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "开始时间：",IDC_LBLSTARTTIME,214,19,41,8
+    LTEXT           "结束时间：",IDC_LBLENDTIME,214,34,41,8
+    CONTROL         "",IDC_DTPSTARTDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,257,15,73,15
+    CONTROL         "",IDC_DTPENDDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,257,32,74,15
+    LTEXT           "游戏名称：",IDC_LBLGAMENAME,39,17,41,8
+    COMBOBOX        IDC_CMBGAMENAME,81,15,121,286,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMBREALNAME,404,15,89,276,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_GRPPAGE,7,54,566,25
+    CONTROL         "",IDC_LISTRESULT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,207,138,60,50
+END
+
+IDD_DLGMODIUPWD DIALOGEX 0, 0, 168, 113
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改密码"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "修改",IDOK,7,92,50,14
+    PUSHBUTTON      "关闭",IDCANCEL,111,92,50,14
+    LTEXT           "用户名：",IDC_LBLACCOUNT,23,10,33,8
+    EDITTEXT        IDC_EDITACCOUNT,59,7,102,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "新密码：",IDC_LBLPWD,23,39,33,8
+    EDITTEXT        IDC_EDITPWD,59,36,102,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "重复新密码：",IDC_LBLREPWD,7,68,49,8
+    EDITTEXT        IDC_EDITREPWD,59,65,102,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_DLGUPDATEMAC DIALOGEX 0, 0, 169, 82
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "重置用户Mac"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,7,61,50,14
+    PUSHBUTTON      "关闭",IDCANCEL,112,61,50,14
+    LTEXT           "用户名：",IDC_LBLACCOUNT,24,10,33,8
+    EDITTEXT        IDC_EDITACCOUNT,59,7,102,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "使用时效：",IDC_STATENDTIME,16,36,41,8
+    CONTROL         "",IDC_DTPENDTIME,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,59,33,103,15
+END
+
+IDD_DLGGAMEASSIST DIALOGEX 0, 0, 584, 330
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "查询",IDSEARCH,221,12,56,14
+    PUSHBUTTON      "关闭",IDCANCEL,222,49,56,14
+    GROUPBOX        "搜索条件",IDC_GRPSEARCH,7,7,566,64
+    LTEXT           "外挂类型：",IDC_LBLASSIST,39,51,41,8
+    LTEXT           "请选择查看页数：",IDC_LBLPAGE,27,88,65,8
+    COMBOBOX        IDC_CMBPAGE,94,87,61,194,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "游戏名称：",IDC_LBLGAMENAME,39,14,41,8
+    COMBOBOX        IDC_CMBGAMENAME,81,12,121,286,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMBASSIST,81,48,121,276,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_GRPPAGE,7,77,566,25
+    CONTROL         "",IDC_LISTRESULT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,65,142,60,50
+    LTEXT           "玩家帐号：",IDC_LBLACCOUNT,173,156,41,8
+    EDITTEXT        IDC_EDITACCOUNT,215,153,125,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "封停原因：",IDC_LBLREASON,173,197,41,8
+    PUSHBUTTON      "封停帐号",IDC_BTNBAN,169,299,50,14
+    PUSHBUTTON      "重置",IDC_BTNRESET,339,299,50,14
+    LTEXT           "封停时间：",IDC_LBLTIME,173,177,41,8
+    EDITTEXT        IDC_EDITTIME,215,174,41,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "天",IDC_LBLDATE,261,176,9,8
+    LTEXT           "封停类型：",IDC_LBLTYPE,173,274,41,8
+    EDITTEXT        IDC_EDITREASON,215,195,176,70,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CMBTYPE,215,272,128,113,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "游戏名称：",IDC_LBLGAME,173,115,41,8
+    EDITTEXT        IDC_EDITGAME,215,112,125,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "大区名称：",IDC_LBLSERVER,173,135,41,8
+    EDITTEXT        IDC_EDITSERVER,215,132,125,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "目前只能对勇士无双的玩家进行封停！",IDC_LBLHINT,353,115,137,8
+    CONTROL         "",IDC_TABRESULT,"SysTabControl32",0x0,7,71,563,13
+    LTEXT           "大区名称：",IDC_LBLSERVERNAME,39,32,41,8
+    COMBOBOX        IDC_CMBSERVER,82,30,121,286,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "刷新时间：",IDC_LBLCIRCLE,387,50,41,8
+    EDITTEXT        IDC_EDITMINUTE,429,48,41,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "分钟",IDC_LBLMINUTE,472,50,17,8
+    PUSHBUTTON      "启用",IDC_BTNSTART,494,47,50,14
+    PUSHBUTTON      "导出数据",IDC_BTNEXPORT,446,12,50,14
+    EDITTEXT        IDC_EDITEXPORT,283,13,161,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITIMPORT,283,31,161,14,ES_AUTOHSCROLL
+    PUSHBUTTON      " 导入数据",IDC_BTNIMPORT,446,31,50,14
+    CONTROL         "",IDC_LISTBANBATCH,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,378,138,60,50
+    PUSHBUTTON      "批量封停",IDC_BTNBANBATCH,307,86,61,14
+    CONTROL         "",IDC_LISTVIP,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,463,139,60,50
+    PUSHBUTTON      "检测vip帐号",IDC_CHECKVIP,221,86,56,14
+    PUSHBUTTON      "查询所有大区",IDC_BTNCHECKACCOUNTALL,221,30,56,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLGMODIPWD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 422
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_DLGUSERMANAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 520
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 301
+    END
+
+    IDD_DLGPOPEDOM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_DLGGMLOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 573
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_DLGMODIUPWD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_DLGUPDATEMAC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_DLGGAMEASSIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 577
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 323
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENUMANAGE MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "重置用户MAC",                     ID__UPDATEUSERMAC
+        MENUITEM "修改密码",                        ID__MODIUSERPWD
+        MENUITEM SEPARATOR
+        MENUITEM "分配权限",                        ID__PPPEDOMMANAGE
+    END
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\M_GM.rc2"  // 不是由 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

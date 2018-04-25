@@ -1,0 +1,6 @@
+; M_JW2.def : 声明 DLL 的模块参数。
+
+LIBRARY      "M_JW2"
+
+EXPORTS
+    ; 此处可以是显式导出
